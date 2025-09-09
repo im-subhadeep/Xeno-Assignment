@@ -20,7 +20,8 @@ This project demonstrates customer segmentation, campaign management, order inge
 - Pub-Sub Architecture: Real-time updates and reliable job processing with BullMQ and IORedis
 
 ## Architecture
-![High Level Diagram](./public/architecture.svg)
+![High Level Diagram](web/public/architecture.svg)
+
 
 ## Overview
 
