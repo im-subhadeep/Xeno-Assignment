@@ -1,0 +1,29 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "functions": {
+    "app/api/**/*.ts": {
+      "maxDuration": 30
+    }
+  },
+  "env": {
+    "MONGODB_URI": "@mongodb_uri",
+    "NEXTAUTH_SECRET": "@nextauth_secret",
+    "AUTH_GOOGLE_ID": "@auth_google_id", 
+    "AUTH_GOOGLE_SECRET": "@auth_google_secret",
+    "GROQ_API_KEY": "@groq_api_key",
+    "UPSTASH_REDIS_REST_URL": "@upstash_redis_rest_url",
+    "UPSTASH_REDIS_REST_TOKEN": "@upstash_redis_rest_token",
+    "REDIS_URL": "@redis_url",
+    "REDIS_HOST": "@redis_host",
+    "REDIS_PORT": "@redis_port",
+    "REDIS_PASSWORD": "@redis_password"
+  },
+  "rewrites": [
+    {
+      "source": "/api-docs",
+      "destination": "/api-docs"
+    }
+  ]
+}
