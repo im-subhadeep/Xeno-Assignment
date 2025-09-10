@@ -8,7 +8,7 @@
     }
   },
   "env": {
-    "MONGODB_URI": "@mongodb_uri",
+    "DB_URL": "@DB_URL",
     "NEXTAUTH_SECRET": "@nextauth_secret",
     "AUTH_GOOGLE_ID": "@auth_google_id", 
     "AUTH_GOOGLE_SECRET": "@auth_google_secret",

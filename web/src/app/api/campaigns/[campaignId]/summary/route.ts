@@ -36,7 +36,7 @@ Avoid technical jargon. The summary is for a marketing manager.
     messages: [
       { role: "user", content: prompt }
     ],
-    model: "llama3-8b-8192",
+    model: "openai/gpt-oss-120b",
     temperature: 0.4,
     max_tokens: 150,
   });

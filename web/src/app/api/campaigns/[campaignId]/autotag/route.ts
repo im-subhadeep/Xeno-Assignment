@@ -40,7 +40,7 @@ Respond only with a valid JSON array of strings, without explanations.
     messages: [
       { role: "user", content: prompt }
     ],
-    model: "llama3-8b-8192",
+    model: "openai/gpt-oss-120b",
     temperature: 0.3,
     max_tokens: 50,
   });

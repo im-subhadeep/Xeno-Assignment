@@ -155,7 +155,7 @@ export async function POST(request: NextRequest) {
           content: `Convert the following natural language description into the specified JSON rule set format: "${userPrompt}"`,
         },
       ],
-      model: "llama3-8b-8192", // Or "mixtral-8x7b-32768" or other models that support JSON well
+      model: "openai/gpt-oss-120b", // Or "mixtral-8x7b-32768" or other models that support JSON well
       temperature: 0.2, // Lower temperature for more deterministic JSON output
       // response_format: { type: "json_object" }, // Enable if your Groq model version reliably supports it
     });
