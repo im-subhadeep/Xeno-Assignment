@@ -1,7 +1,16 @@
 const { MongoClient } = require('mongodb');
+require('dotenv').config();
 
 async function checkDatabase() {
-  const client = new MongoClient('mongodb+srv://subha:subha@cluster0.yapk1m5.mongodb.net/xenocrm?retryWrites=true&w=majority&appName=Cluster0');
+  const mongoUri = process.env.MONGODB_URI || process.env.DB_URL;
+  
+  if (!mongoUri) {
+    console.error('Error: MongoDB URI not found in environment variables');
+    console.error('Please set MONGODB_URI or DB_URL in your .env.local file');
+    return;
+  }
+  
+  const client = new MongoClient(mongoUri);
   try {
     await client.connect();
     console.log('Connected to MongoDB');
